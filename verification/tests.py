@@ -13,7 +13,7 @@ TESTS = {
         
     {
         "input": [[1, 2, 3, 4, 5]],
-        "answer": 15
+        "answer": 45
     },
     {
         "input": [[]],
