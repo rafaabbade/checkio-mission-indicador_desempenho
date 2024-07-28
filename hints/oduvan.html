@@ -2,60 +2,78 @@
  <div class="question-answer">
   <div class="question">
    <p>
-    {{DUVIDA 1}}
+    Como pegar índices pares de uma lista?
    </p>
   </div>
   <div class="answer">
    <p>
-    {{DICA 1}}
+    Você pode iterar pela lista e verificar se o índice é par usando o operador de resto (%). Por exemplo, para somar os elementos nos índices pares de uma lista:
+
+<pre class="brush: python">
+valores = [1, 2, 3, 4, 5]
+soma = 0
+for i in range(len(valores)):
+    if i % 2 == 0:
+        soma = soma + valores[i]
+</pre>
+Isso permitirá que você some apenas os elementos em índices pares.
+
+
    </p>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    {{DUVIDA 2}}
+    Tem um jeito mais fácil?
    </p>
   </div>
   <div class="answer">
    <p>
-    {{DICA 2}}
+    Você pode usar o range com um passo de 2 para iterar apenas pelos índices pares. Isso simplifica o código e evita a necessidade de verificações dentro do loop:
+
+<pre class="brush: python">
+valores = [1, 2, 3, 4, 5]
+soma = sum(valores[i] for i in range(0, len(valores), 2))
+print(soma)  # Saída: 9
+</pre>
+Dessa forma, você soma os elementos nos índices pares de forma mais direta.
    </p>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    {{DUVIDA 3}}
+    5
    </p>
   </div>
   <div class="answer">
    <p>
-    {{DICA 3}}
+    6
    </p>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    {{DUVIDA 4}}
+    7
    </p>
   </div>
   <div class="answer">
    <p>
-    {{DICA 4}}
+    8
    </p>
   </div>
  </div>
  <div class="question-answer">
   <div class="question">
    <p>
-    {{DUVIDA 5}}
+    9
    </p>
   </div>
   <div class="answer">
    <p>
-    {{DICA 5}}
+    10
    </p>
   </div>
  </div>

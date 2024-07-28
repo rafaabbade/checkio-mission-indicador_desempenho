@@ -1,1 +1,13 @@
-{{CODIGO INICIAL}}
+def indicador_desempenho(metrica):
+    # Seu código aqui
+    return None
+
+print("Example:")
+print(indicador_desempenho([1, 2, 3, 4, 5]))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+assert indicador_desempenho([1, 2, 3, 4, 5]) == 15
+assert indicador_desempenho([]) == 0
+assert indicador_desempenho([10, 20, 30]) == 1200  # (10 + 30) * 30
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
